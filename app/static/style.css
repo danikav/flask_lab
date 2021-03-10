@@ -1,10 +1,49 @@
-a {
-    text-decoration: none;
-    color: black;
-
+body{
+    background-image: url(/static/space.jpeg);
+    background-repeat: none;
+    text-align: center;
 }
 
+h1{
+    font-family: 'Dancing Script', cursive;
+    color:white; 
+    text-align: center;
+    font-size: 100px;
+    margin: 0;
+}
 
+img {
+    height: 300px;
+    width: 400px;
+    padding: none;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+button {
+    margin: 100, auto;
+    padding: 15px;
+    color: white;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+
+}
 a::after {
-    color:black;
+    color:white;
+}
+
+p{
+    color: white;
+    font-size: 25px;
+    margin-top: 25px;
+
+}
+#got {
+    height: 200px;
+    width: 250px;
 }
