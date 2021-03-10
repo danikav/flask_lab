@@ -10,3 +10,12 @@ def index():
         title='Drinkz R Us',
         orders= orders
     )
+
+@app.route('/orders/<index>')
+def show_by_id(index):
+    return render_template(
+        'find_order.html',
+        title='Drinkz R Us',
+        index=index,
+        orders=orders
+    )

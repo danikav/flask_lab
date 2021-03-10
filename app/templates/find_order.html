@@ -8,13 +8,16 @@
     <title>{{ title}} </title>
 </head>
 <body>
-    <h1>Orders</h1>
+    <h1>Order</h1>
     {% for order in orders %}
+    {% if order.id == index %}
     <div>
         <p>
-            <a href="/orders/{{order.id}}">{{order.customer_name}} ~ {{ order.order_date }} ~ {{ order.quantity }} ~ {{ order.alcohol_name }} </a>
+            {{ order.customer_name }}, {{ order.order_date }}, {{ order.quantity }}. {{ order.alcohol_name }}
         </p>
     </div>
+    {% endif %}
     {% endfor %}
+    <a href="/orders"><button>Home</button></a>
 </body>
 </html>
